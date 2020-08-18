@@ -6,9 +6,9 @@ function Footer() {
         <div style={{
             height: '80px', display: 'flex',
             flexDirection: 'column', alignItems: 'center',
-            justifyContent: 'center', fontSize:'1rem'
+            justifyContent: 'center', fontSize:'.75rem'
         }}>
-           <p> Food Anywhere, Anytime!  <Icon type="car" /></p>
+           <p><Icon type="heart" /> Designed & Coded by Nick Nguyen </p>
         </div>
     )
 }

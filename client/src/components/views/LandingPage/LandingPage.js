@@ -144,7 +144,7 @@ function LandingPage() {
     return (
         <div style={{ width: '75%', margin: '3rem auto' }}>
             <div style={{ textAlign: 'center' }}>
-                <h2>  Blue Brain  <Icon type="smile" />  </h2>
+                <h2>  Memories  </h2>
             </div>
 
 

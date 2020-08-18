@@ -15,7 +15,13 @@ const cookieParser = require("cookie-parser");
 //   .catch(err => console.error(err));
 
 const mongoose = require("mongoose");
- mongoose.connect('mongodb+srv://nick:newyen12@cluster0-baafu.mongodb.net/<dbname>?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true, useFindAndModify: false });
+ mongoose.connect('mongodb+srv://nick:newyen12@cluster0-baafu.mongodb.net/<dbname>?retryWrites=true&w=majority', 
+ { 
+   useNewUrlParser: true, 
+   useUnifiedTopology: true, 
+   useCreateIndex: true, 
+   useFindAndModify: false 
+  });
  mongoose.connection.once('open', function(){
   console.log('Conection has been made!');
 }).on('error', function(error){
