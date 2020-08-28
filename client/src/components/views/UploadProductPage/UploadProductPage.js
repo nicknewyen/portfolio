@@ -83,7 +83,6 @@ function UploadProductPage(props) {
 
                 {/* DropZone */}
                 <FileUpload refreshFunction={updateImages} />
-
                 <br />
                 <br />
                 <label>Title</label>
