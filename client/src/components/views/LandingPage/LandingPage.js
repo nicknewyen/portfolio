@@ -4,7 +4,7 @@ import { Icon, Col, Card, Row } from 'antd';
 import ImageSlider from '../../utils/ImageSlider';
 import CheckBox from './Sections/CheckBox';
 import RadioBox from './Sections/RadioBox';
-import { foods, price } from './Sections/Datas';
+import { arts, price } from './Sections/Datas';
 import SearchFeature from './Sections/SearchFeature';
 
 const { Meta } = Card;
@@ -18,7 +18,7 @@ function LandingPage() {
     const [SearchTerms, setSearchTerms] = useState("")
 
     const [Filters, setFilters] = useState({
-        foods: [],
+        arts: [],
         price: []
     })
 
@@ -44,7 +44,7 @@ function LandingPage() {
                     }
                     setPostSize(response.data.postSize)
                 } else {
-                    alert('Could not find food item data')
+                    alert('Could not find your Memories')
                 }
             })
     }
@@ -144,7 +144,7 @@ function LandingPage() {
     return (
         <div style={{ width: '75%', margin: '3rem auto' }}>
             <div style={{ textAlign: 'center' }}>
-                <h2>  Memories  </h2>
+                <h2>  Designs  </h2>
             </div>
 
 
@@ -153,8 +153,8 @@ function LandingPage() {
             <Row gutter={[16, 16]}>
                 <Col lg={12} xs={24} >
                     <CheckBox
-                        list={foods}
-                        handleFilters={filters => handleFilters(filters, "foods")}
+                        list={arts}
+                        handleFilters={filters => handleFilters(filters, "arts")}
                     />
                 </Col>
                 <Col lg={12} xs={24}>

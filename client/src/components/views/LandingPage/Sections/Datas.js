@@ -2,71 +2,49 @@
 const price = [
     {
         "_id": 0,
-        "name": "All Prices",
+        "name": "All Resolutions",
         "array": []
     },
     {
         "_id": 1,
-        "name": "$0 to $10",
-        "array": [0, 10]
+        "name": "Small",
+        "array": [0, 768]
     },
     {
         "_id": 2,
-        "name": "$10 to $15",
-        "array": [10, 15]
+        "name": "Medium",
+        "array": [768, 1024]
     },
     {
         "_id": 3,
-        "name": "$15 to $25",
-        "array": [15, 25]
-    },
-    {
-        "_id": 4,
-        "name": "$25 to $50",
-        "array": [25, 50]
-    },
-    {
-        "_id": 5,
-        "name": "More than $50",
-        "array": [50, 1500000]
+        "name": "Large",
+        "array": [1024, 100000]
     }
 ]
 
 
 
-const foods = [
+const arts = [
     {
         "_id": 1,
-        "name": "American"
+        "name": "Photography"
     },
     {
         "_id": 2,
-        "name": "Chinese"
+        "name": "Graphic Design"
     },
     {
         "_id": 3,
-        "name": "Italian"
+        "name": "Painting"
     },
     {
         "_id": 4,
-        "name": "Mexican"
-    },
-    {
-        "_id": 5,
-        "name": "Korean"
-    },
-    {
-        "_id": 6,
-        "name": "Japanese"
-    },
-    {
-        "_id": 7,
-        "name": "Mediterranean"
+        "name": "Drawing"
     }
 ]
 
 
 export {
     price,
-    foods
+    arts
 }

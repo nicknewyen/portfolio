@@ -7,13 +7,10 @@ const { Title } = Typography;
 const { TextArea } = Input;
 
 const Foods = [
-    { key: 1, value: "American" },
-    { key: 2, value: "Chinese" },
-    { key: 3, value: "Italian" },
-    { key: 4, value: "Mexican" },
-    { key: 5, value: "Korean" },
-    { key: 6, value: "Japanese" },
-    { key: 7, value: "Mediterranean" }
+    { key: 1, value: "Photography" },
+    { key: 2, value: "Graphic Design" },
+    { key: 3, value: "Painting" },
+    { key: 4, value: "Drawing" },
 ]
 
 function UploadProductPage(props) {
@@ -78,7 +75,7 @@ function UploadProductPage(props) {
     return (
         <div style={{ maxWidth: '700px', margin: '2rem auto' }}>
             <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
-                <Title level={2}> Upload Food Item</Title>
+                <Title level={2}> Upload Design</Title>
             </div>
 
 
@@ -89,7 +86,7 @@ function UploadProductPage(props) {
 
                 <br />
                 <br />
-                <label>Restaurant Name</label>
+                <label>Title</label>
                 <Input
                     onChange={onTitleChange}
                     value={TitleValue}
